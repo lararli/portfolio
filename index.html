@@ -4,32 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header></header>
+    <header class="header">
+        <nav class="header__menu">
+            <a class="header__menu__link" href="index.html">Home</a>
+            <a class="header__menu__link" href="about.html">Sobre mim</a>
+        </nav>
+    </header>
     <main class="page">
         <section class="page__top-left-image">
-            <img src="form01.png" alt="circle form">
+            <img src="images/forms/triple_circle.png" alt="circle form">
         </section>
-        <section>
+        <section class="intro__composition">
+            <img src="images/forms/triple_dots.png" alt="three dots colored" class="centered-image">
             <section class="intro">
                 <section class="intro__content">
-                    <h1 class="intro__content__title">Eleve seu negócio digital a outro nível <strong class="title-highligh">com um Front-end de qualidade!</strong></h1>
+                    <h1 class="intro__content__title">Eleve seu negócio digital a outro nível <strong class="title-highligh">com um site de qualidade!</strong></h1>
                     <p class="intro__content__text">Olá! Sou Lara Inácio, desenvolvedora back-end com especialidade em Python, dados e automação. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
                     <div class="intro__links">
-                        <a class="intro__links__link" href="https://linkedin.com/in/lara-inacio">LinkedIn</a>
-                        <a class="intro__links__link" href="https://github.com/lararli">Github</a>
+                        <h2 class="intro__links__subtitle">Acesse minhas redes:</h2>
+                        <a class="intro__links__link linkedin" href="https://linkedin.com/in/lara-inacio">
+                            <img src="images/logos/linkedin.png" alt="linkedin logo">
+                            LinkedIn
+                        </a>
+                        <a class="intro__links__link github" href="https://github.com/lararli">
+                            <img src="images/logos/github.png" alt="github logo">
+                            Github
+                        </a>
+                        <a class="intro__links__link medium" href="https://larainacio.medium.com">
+                            <img src="images/logos/medium.png" alt="medium logo">
+                            Medium
+                        </a>
                     </div>
                 </section>
-                <img src="image.png" alt="profile image for portfolio">
+                <img src="images/me_myself_and_i.png" alt="profile image for portfolio">
             </section>
-            <img src="image_2.png" alt="three dots colored" class="centered-image">
         </section>
         <section class=page__bottom-right-image>
-            <img src="form02.png" alt="triangle form">
+            <img src="images/forms/triple_triangle.png" alt="triangle form">
         </section>
     </main>
-    <footer></footer>
+    <footer class="footer">Desenvolvido por Lara Inácio.</footer>
 </body>
 </html>
