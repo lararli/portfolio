@@ -14,7 +14,7 @@
 }
 
 .header {
-    padding: 4% 0% 0% 49%;
+    padding: 2% 0% 0% 17.5%;
 
 }
 
@@ -27,7 +27,7 @@
 .header__menu__link {
     font-family: var(--primary-font);
     text-align: center;
-    font-size: 24px; 
+    font-size: 1.5rem; 
     font-weight: 600;   
     color: var(--secondary-color);
     text-decoration: none;
@@ -56,28 +56,23 @@ html, body {
     justify-content: space-between;
     padding: 60px;
     position: relative; /* Set intro to relative positioning */
-}
-
-.page__top-left-image {
-    position: fixed;
-    top: 0;
-    left: 0;
+    gap: 82px
 }
 
 .intro__content {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
 .intro__content__title {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--secondary-font);
 }
 
 .intro__content__text {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--primary-font);
 }
 
@@ -92,17 +87,17 @@ html, body {
 .intro__links__subtitle {
     font-family: var(--secondary-font);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .intro__links__link {
     display: flex;
     justify-content: center;
     gap: 16px;
-    width: 378px;
+    width: 60%;
     text-align: center;
     padding: 21.5px 0;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--primary-font);
     text-decoration: none;
     color: var(--terciary-color);
@@ -128,30 +123,34 @@ html, body {
     content: url('images/logos/medium-hover.png'); 
 }
 
-.centered-image {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-0%, -50%);
-}
-
-.page__bottom-right-image {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    z-index: 0; /* Ensure the image is above other elements */
-}
-
 .footer {
     font-family: var(--secondary-font);
-    font-size: 16px;
+    font-size: 1rem;
     background-color: var(--secondary-color);
     color: var(--bg-color);
     text-align: center;
     padding: 10px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
-    z-index: 1; /* Place the footer below the image */
+}
+
+@media (max-width: 1200px) {
+
+    .header {
+        padding: 10%
+    }   
+
+    .header__menu {
+        justify-content: center;
+    }
+
+    .intro {
+        flex-direction: column-reverse;
+        padding: 5% 0%;
+        margin: 0% 0%;
+    }
+
+    .intro__content {
+        width: auto;
+        padding: 5%;
+    }
 }
